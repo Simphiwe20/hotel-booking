@@ -1,1 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik+Bubbles&display=swap');
+
 /* You can add global styles to this file, and also import other style files */
+$bg-color: #dba765;
+$w-color: white;
+
+html, body { height: 100%; }
+body { margin: 0; 
+    // font-family: Roboto, "Helvetica Neue", sans-serif; 
+    font-family: "Poppins", sans-serif;
+}
+
+
+// Flex styles
+.flex {
+    display: flex;
+}
+
+.center-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.spacebetween-center {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.gap05 {
+    gap: 0.5em;
+}
+
+.gap1 {
+    gap: 1em;
+}
+
+// Size
+
+.mat-icon {
+    height: 15px !important;
+    width: 13px !important;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.width-95 {
+    width: 95%;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+// Font styles
+
+.text-center {
+    text-align: center;
+}
+
+.color-w {
+    color: $w-color !important;
+}
+
+.bg-color {
+    background-color: $bg-color !important;
+}
+
+// common styles

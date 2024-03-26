@@ -1,0 +1,21 @@
+<mat-toolbar class="flex center-center">
+    <div class="width-95 flex spacebetween-center">
+        <div class="flex center-center gap1">
+            <div class="flex gap05 center-center">
+                <mat-icon>email</mat-icon>
+                <small>bookings@luxury.ac.za</small>
+            </div>
+            <div class="flex gap05 center-center">
+                <mat-icon>location_on</mat-icon>
+                <small>Tiberius 801, Rissik St jhb</small>
+            </div>
+            <div class="flex gap05 center-center">
+                <mat-icon>phone_enabled</mat-icon>
+                <small>+27628107203</small>
+            </div>
+        </div>
+        <div class="flex gap05">
+            <img *ngFor="let icon of icons" [src]="icon.url" alt="">
+        </div>
+    </div>
+</mat-toolbar>

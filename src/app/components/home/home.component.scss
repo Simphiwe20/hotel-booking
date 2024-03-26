@@ -1,0 +1,53 @@
+$bg-color: #dba765;
+$primary-color: white;
+
+mat-toolbar {
+    p {
+        font-weight: 200;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        color: $primary-color;
+        font-size: xx-large;
+        font-weight: 100;
+        color: $bg-color;
+        text-transform: uppercase;
+    }
+}
+
+
+section {
+    height: 600px;
+    width: 100%;
+
+    h1 {
+        font-size: xxx-large;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $primary-color;
+        margin: 0;
+    }
+
+    h3 {
+        color: $primary-color;
+        font-size: x-large;
+        font-weight: 100;
+        color: $bg-color;
+        text-transform: uppercase;
+        margin: 0;
+
+    }
+
+    button {
+        width: 200px;
+        height: 60px;
+        font-size: medium;
+    }
+}
+
+.home-bg {
+    background-image: url(../../../assets/images/bg-images/bed_room.jpeg);
+    background-size: cover;
+}

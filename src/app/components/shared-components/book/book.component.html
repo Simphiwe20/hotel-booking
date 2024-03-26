@@ -1,0 +1,50 @@
+<div>
+    <div class="checkIn">
+        <form *ngIf="cardType === 'checkNow'" class="flex center-center">
+            <div class="flex column">
+                <mat-form-field appearance="fill">
+                    <mat-label>Check In</mat-label>
+                    <input matInput [matDatepicker]="picker">
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Check Out</mat-label>
+                    <input matInput [matDatepicker]="picker1">
+                    <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
+                    <mat-datepicker #picker1></mat-datepicker>
+                </mat-form-field>
+            </div>
+            <div class="flex column">
+                <mat-form-field appearance="fill">
+                    <mat-label>Adult</mat-label>
+                    <mat-select>
+                        <mat-option *ngFor="let visitor of [1, 2 , 3, 4, 5]">
+                            {{visitor}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Children</mat-label>
+                    <mat-select>
+                        <mat-option *ngFor="let child of [1, 2, 3, 4, 5, 6, 7]">
+                            {{child}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="flex column">
+                <mat-form-field appearance="fill">
+                    <mat-label>Rooms</mat-label>
+                    <mat-select>
+                        <mat-option *ngFor="let room of [1, 2, 3, 4, 5, 6]">
+                            {{room}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <button  class="bg-color color-w" mat-raised-button>Check Now</button>
+            </div>
+
+        </form>
+    </div>
+</div>

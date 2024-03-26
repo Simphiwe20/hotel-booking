@@ -1,0 +1,21 @@
+<div class="main-container">
+    <app-contacts></app-contacts>
+    <mat-toolbar class="flex center-center">
+        <div class="width-95 flex spacebetween-center">
+            <h2>Luxury</h2>
+            <div class="flex gap05">
+                <p *ngFor="let menu of menuItems">{{menu.name}}</p>
+            </div>
+        </div>
+    </mat-toolbar>
+    <section class="home-bg flex center-center">
+        <div class="width-50 flex column center-center">
+            <h3>this is luxury hotel</h3>
+            <h1>Superior hotel in world</h1>
+            <p class="color-w text-center">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I
+                enjoy with whole heart</p>
+            <button class="bg-color color-w" mat-raised-button>Rooms & Suits</button>
+        </div>
+    </section>
+    <app-book [cardType]="'checkNow'"></app-book>
+</div>
