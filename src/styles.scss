@@ -26,6 +26,10 @@ body { margin: 0;
     align-items: center;
 }
 
+.spacebetween {
+    justify-content: space-between;
+}
+
 .column {
     flex-direction: column;
 }
@@ -36,6 +40,18 @@ body { margin: 0;
 
 .gap1 {
     gap: 1em;
+}
+
+.gap2 {
+    gap: 2em;
+}
+
+.gap5 {
+    gap: 5em;
+}
+
+.flex-end {
+    align-items: end;
 }
 
 // Size
@@ -53,12 +69,17 @@ body { margin: 0;
     height: 100%;
 }
 
+
 .width-95 {
     width: 95%;
 }
 
 .width-50 {
     width: 50%;
+}
+
+.height-90 {
+    height: 80%
 }
 
 // Font styles

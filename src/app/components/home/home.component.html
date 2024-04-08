@@ -1,4 +1,4 @@
-<div class="main-container">
+<div class="main-container full-height">
     <app-contacts></app-contacts>
     <mat-toolbar class="flex center-center">
         <div class="width-95 flex spacebetween-center">
@@ -12,10 +12,18 @@
         <div class="width-50 flex column center-center">
             <h3>this is luxury hotel</h3>
             <h1>Superior hotel in world</h1>
-            <p class="color-w text-center">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I
+            <p class="color-w text-center">A wonderful serenity has taken possession of my entire soul, like these sweet
+                mornings of spring which I
                 enjoy with whole heart</p>
             <button class="bg-color color-w" mat-raised-button>Rooms & Suits</button>
         </div>
     </section>
-    <app-book [cardType]="'checkNow'"></app-book>
+    <div class="check-in-container flex center-center z-index">
+        <div class="container flex center-center">
+            <app-book [cardType]="'checkNow'"></app-book>
+        </div>
+    </div>
+    <div class="full-height">
+        <app-part-one></app-part-one>
+    </div>
 </div>

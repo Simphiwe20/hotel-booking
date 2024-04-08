@@ -11,6 +11,7 @@ import { ToolbarComponent } from './components/shared-components/toolbar/toolbar
 import { ContactsComponent } from './components/shared-components/contacts/contacts.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
+import { PartOneComponent } from './components/part-one/part-one.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MaterialModule } from './modules/material/material.module';
     BookComponent,
     RoomsCardComponent,
     ToolbarComponent,
-    ContactsComponent
+    ContactsComponent,
+    PartOneComponent
   ],
   imports: [
     BrowserModule,
