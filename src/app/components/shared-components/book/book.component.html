@@ -1,22 +1,22 @@
-<div>
+<div class="">
     <div class="checkIn">
-        <form *ngIf="cardType === 'checkNow'" class="flex center-center">
-            <div class="flex column">
-                <mat-form-field appearance="fill">
+        <form *ngIf="cardType === 'checkNow'" class="flex gap1 center-center full-width">
+            <div class="flex gap1">
+                <mat-form-field appearance="fill" class="width-180">
                     <mat-label>Check In</mat-label>
                     <input matInput [matDatepicker]="picker">
                     <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
                     <mat-datepicker #picker></mat-datepicker>
                 </mat-form-field>
-                <mat-form-field appearance="fill">
+                <mat-form-field appearance="fill" class="width-180 ">
                     <mat-label>Check Out</mat-label>
                     <input matInput [matDatepicker]="picker1">
                     <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
                     <mat-datepicker #picker1></mat-datepicker>
                 </mat-form-field>
             </div>
-            <div class="flex column">
-                <mat-form-field appearance="fill">
+            <div class="flex gap1">
+                <mat-form-field appearance="fill" class="width-180 ">
                     <mat-label>Adult</mat-label>
                     <mat-select>
                         <mat-option *ngFor="let visitor of [1, 2 , 3, 4, 5]">
@@ -24,7 +24,7 @@
                         </mat-option>
                     </mat-select>
                 </mat-form-field>
-                <mat-form-field appearance="fill">
+                <mat-form-field appearance="fill" class="width-180 ">
                     <mat-label>Children</mat-label>
                     <mat-select>
                         <mat-option *ngFor="let child of [1, 2, 3, 4, 5, 6, 7]">
@@ -33,8 +33,8 @@
                     </mat-select>
                 </mat-form-field>
             </div>
-            <div class="flex column">
-                <mat-form-field appearance="fill">
+            <div class="flex gap1 ">
+                <mat-form-field appearance="fill" class="width-180 ">
                     <mat-label>Rooms</mat-label>
                     <mat-select>
                         <mat-option *ngFor="let room of [1, 2, 3, 4, 5, 6]">
