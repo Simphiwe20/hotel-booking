@@ -1,0 +1,18 @@
+<div class="flex column center-center">
+    <div class="width-80">
+        <div class="flex column center-center">
+            <p class="t-y-color">THE LUXURY HOTEL</p>
+            <p class="header-text">ROOMS & SUITS</p>
+        </div>
+        <div class="card-suits flex ">
+            <div *ngFor="let room of rooms">
+                <div class="img-container">
+                    <img [src]="room.img" alt="">
+                </div>
+                <p class="ab b-1300">{{room.type}}</p>
+                <p class="ab b-1150">{{room.consist}}</p>
+                <p>{{room.cost}}</p>
+            </div>
+        </div>
+    </div>
+</div>

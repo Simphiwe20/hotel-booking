@@ -1,0 +1,35 @@
+.header-text {
+    margin: 2px;
+    font-size: xxx-large;
+}
+
+.card-suits  {
+    img {
+        width: 95%;
+        height: 400px;
+    }
+}
+
+.width-80 {
+    width: 80%;
+}
+
+.img-container {
+    position: relative;
+    z-index: -1;
+}
+
+.ab {
+    position: absolute;
+    z-index: 1000;
+}
+
+.b-1300 {
+    bottom: -1300px;
+}
+
+.b-1150 {
+    bottom: -1350px;
+}
+
+// .ab:nth-child(1)
