@@ -12,6 +12,7 @@ import { ContactsComponent } from './components/shared-components/contacts/conta
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
 import { PartOneComponent } from './components/part-one/part-one.component';
+import { PartTwoComponent } from './components/home-components/part-two/part-two.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PartOneComponent } from './components/part-one/part-one.component';
     RoomsCardComponent,
     ToolbarComponent,
     ContactsComponent,
-    PartOneComponent
+    PartOneComponent,
+    PartTwoComponent,
   ],
   imports: [
     BrowserModule,
